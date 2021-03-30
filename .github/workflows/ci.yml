@@ -25,5 +25,5 @@ jobs:
       - name: Deploy to staging
         if: github.event_name == 'push'
         run: echo "DEPLOY npx surge :)"
-          env:
-            DEPLOY_TOKEN: ${{ secrets.SOME_SECRETS }}
+        env:
+          DEPLOY_TOKEN: ${{ secrets.SOME_SECRETS }}
